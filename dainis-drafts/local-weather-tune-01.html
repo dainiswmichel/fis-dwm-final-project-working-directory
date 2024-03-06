@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>MusicMatchR App</title>
-    <link rel="stylesheet" type="text/css" href="music-matcher-app-styles.css">
+    <title>LocalWeatherTune App</title>
+    <link rel="stylesheet" type="text/css" href="./music-matcher-app-styles.css">
     <script type="text/javascript" defer src="./songFinderID.js"></script>
     <script type="text/javascript" defer src="./themeSelector.js"></script>
+    <script type="text/javascript" defer src="./geoLocation.js"></script>
 </head>
 <body>
     <select id="theme-select">
@@ -14,9 +15,10 @@
     </select>
 
     <form id="song-form" style="display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 600px; margin: 0 auto;">
-        <h1>MusicMatchR App</h1>
+        <h1>Local Weather Tune App</h1>
         <label for="location">City, State, Country</label>
         <input type="text" id="location" name="location" placeholder="City, State, Country" style="width: 100%; max-width: 500px;">
+        <button id="use-gps" type="button">GeoLocate Me!</button>
         <label for="songID">songID</label>
         <input type="text" id="songID" name="songID" style="width: 100%; max-width: 500px;">
         <label for="weatherWords">WeatherWords</label>
