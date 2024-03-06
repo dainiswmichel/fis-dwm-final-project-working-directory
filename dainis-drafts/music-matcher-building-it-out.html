@@ -2,9 +2,17 @@
 <html>
 <head>
     <title>MusicMatchR App</title>
+    <link rel="stylesheet" type="text/css" href="music-matcher-app-styles.css">
     <script type="text/javascript" defer src="./songFinderID.js"></script>
+    <script type="text/javascript" defer src="./themeSelector.js"></script>
 </head>
 <body>
+    <select id="theme-select">
+        <option value="blackAndWhite">Black and White</option>
+        <option value="lightBlue">Light Blue</option>
+        <option value="darkBlue">Dark Blue</option>
+    </select>
+
     <form id="song-form">
         <table>
             <tr>
@@ -27,6 +35,5 @@
     </form>
 
     <div id="filtered-songs-container"></div>
-
 </body>
 </html>
